@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engineering Showcase — Rana Bilal</title>
+<meta name="description" content="Selected Android, Flutter, and Kotlin Multiplatform engineering work by Rana Bilal, including production apps used by hundreds of thousands of drivers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true">
+  <span class="b1"></span>
+  <span class="b2"></span>
+  <span class="b3"></span>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Rana<span class="dot">.</span>Bilal <small>/ ENGINEER</small></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary nav-cta-mobile">Hire Me</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-header">
+    <div class="wrap">
+      <div class="eyebrow-line"><span class="rule"></span> Engineering Showcase</div>
+      <h1>Selected systems, shipped and hardened</h1>
+      <p>Nine engagements spanning native mobile, Kotlin Multiplatform, and the full-stack systems that back them. Filter by discipline or browse everything.</p>
+    </div>
+  </section>
+
+  <!-- ============ FILTER + GRID ============ -->
+  <section class="section" style="padding-top:20px;">
+    <div class="wrap">
+
+      <div class="filter-bar reveal" role="tablist" aria-label="Project category filter">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects <span class="count">(10)</span></button>
+        <button class="filter-btn" data-filter="android" role="tab" aria-selected="false">Native Android <span class="count">(7)</span></button>
+        <button class="filter-btn" data-filter="flutter" role="tab" aria-selected="false">Flutter <span class="count">(2)</span></button>
+        <button class="filter-btn" data-filter="cmp" role="tab" aria-selected="false">KMP / CMP <span class="count">(1)</span></button>
+      </div>
+
+      <div class="showcase-grid reveal" id="showcaseGrid">
+        <article class="showcase-card" data-cat="android" data-modal="motive-driver">
+          <div class="thumb">
+            <img src="assets/img/motive-driver.jpg" alt="Motive Driver App thumbnail">
+            <span class="cat-tag">Android</span>
+          </div>
+          <div class="body">
+            <h3>Motive Driver App</h3>
+            <p class="subtitle">Android Pod Lead, Motive (ex-KeepTruckin)</p>
+            <p class="summary">The primary Android client used by hundreds of thousands of commercial drivers across North America to stay compliant with FMCSA and CCMTA electronic-logging regulations. Owned core ELD/HOS workflows and Bluetooth pairing with Motive's in-cab Vehicle Gateway hardware.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">MVVM/MVI</span><span class="pill">Bluetooth (BLE)</span><span class="pill">Room</span><span class="pill">Firebase Crashlytics</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">1M+ Installs</span><span class="badge-impact">4.5★ Play Store</span><span class="badge-impact">FMCSA &amp; CCMTA Compliant</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+
+        <article class="showcase-card" data-cat="android" data-modal="motive-fleet">
+          <div class="thumb">
+            <img src="assets/img/motive-fleet.jpg" alt="Motive Fleet App thumbnail">
+            <span class="cat-tag">Android</span>
+          </div>
+          <div class="body">
+            <h3>Motive Fleet App</h3>
+            <p class="subtitle">Android Pod Lead, Motive (ex-KeepTruckin)</p>
+            <p class="summary">The companion Android app for fleet managers and dispatchers — real-time GPS tracking, vehicle health telematics, and remote ELD compliance monitoring across an entire fleet from a single map view.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">Google Maps SDK</span><span class="pill">REST APIs</span><span class="pill">MVVM</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">100K+ Installs</span><span class="badge-impact">Real-Time Fleet Visibility</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+
+        <article class="showcase-card" data-cat="android" data-modal="airmiles">
+          <div class="thumb">
+            <img src="assets/img/airmiles.jpg" alt="Airmiles App thumbnail">
+            <span class="cat-tag">Android</span>
+          </div>
+          <div class="body">
+            <h3>Airmiles App</h3>
+            <p class="subtitle">Android Lead Developer, Mylist / Merit Incentives</p>
+            <p class="summary">A regional loyalty rewards app built from architecture design through Play Store launch — letting members track their Air Miles balance, browse partner offers, and redeem rewards on the go.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">MVVM</span><span class="pill">REST APIs</span><span class="pill">Push Notifications</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Greenfield Build to Launch</span><span class="badge-impact">Middle East Loyalty Network</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+
+        <article class="showcase-card" data-cat="android" data-modal="gifti-oman">
+          <div class="thumb">
+            <img src="assets/img/gifti-oman.jpg" alt="Gifti Oman thumbnail">
+            <span class="cat-tag">Android</span>
+          </div>
+          <div class="body">
+            <h3>Gifti Oman</h3>
+            <p class="subtitle">Android Lead Developer, Mylist / Merit Incentives</p>
+            <p class="summary">Oman's e-commerce gifting app — letting users buy, personalize, and send digital gift cards from a growing network of retail partners, with tie-in offers for OAB credit card holders.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">MVVM</span><span class="pill">Payment Integration</span><span class="pill">REST APIs</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Regional Retail Partner Network</span><span class="badge-impact">Bank-Tier Promo Integration</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+
+        <article class="showcase-card" data-cat="android" data-modal="offaraty">
+          <div class="thumb">
+            <img src="assets/img/offaraty.jpg" alt="Offaraty by Riyad Bank thumbnail">
+            <span class="cat-tag">Android</span>
+          </div>
+          <div class="body">
+            <h3>Offaraty by Riyad Bank</h3>
+            <p class="subtitle">Android Lead Developer, Mylist / Merit Incentives</p>
+            <p class="summary">An exclusive offers and benefits app built for Riyad Bank's employees — browse and redeem discounts across shopping, dining, and lifestyle categories using an employee-code login.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">MVVM</span><span class="pill">REST APIs</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Enterprise Banking Client</span><span class="badge-impact">Employee-Only Offers Platform</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+
+        <article class="showcase-card" data-cat="android" data-modal="crypto-tracker">
+          <div class="thumb">
+            <img src="assets/img/crypto-tracker.jpg" alt="Crypto Tracker thumbnail">
+            <span class="cat-tag">Android</span>
+          </div>
+          <div class="body">
+            <h3>Crypto Tracker</h3>
+            <p class="subtitle">Personal Project — Open Source</p>
+            <p class="summary">A full-featured crypto market tracker built to demonstrate modern Android architecture end to end — Compose UI, MVI, and a custom-drawn line chart, all wired together with Koin and Ktor.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">Ktor</span><span class="pill">Koin</span><span class="pill">MVI</span><span class="pill">Material 3</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Clean Architecture Demo</span><span class="badge-impact">Custom Canvas Chart Engine</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+
+        <article class="showcase-card" data-cat="flutter" data-modal="flutter-movie-explorer">
+          <div class="thumb">
+            <img src="assets/img/flutter-movie-explorer.jpg" alt="Flutter Movie Explorer thumbnail">
+            <span class="cat-tag">Flutter</span>
+          </div>
+          <div class="body">
+            <h3>Flutter Movie Explorer</h3>
+            <p class="subtitle">Personal Project — Open Source</p>
+            <p class="summary">A production-grade Flutter movie discovery app built strictly to Clean Architecture and BLoC, with debounced live search, infinite scroll, and a full BLoC/UseCase unit test suite.</p>
+            <div class="pill-row"><span class="pill">Flutter</span><span class="pill">Dart</span><span class="pill">BLoC</span><span class="pill">Clean Architecture</span><span class="pill">mocktail</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Full BLoC Test Suite</span><span class="badge-impact">Clean Architecture Reference Build</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+
+        <article class="showcase-card" data-cat="cmp" data-modal="cmp-movie-explorer">
+          <div class="thumb">
+            <img src="assets/img/cmp-movie-explorer.jpg" alt="The Movie Explorer (CMP) thumbnail">
+            <span class="cat-tag">KMP/CMP</span>
+          </div>
+          <div class="body">
+            <h3>The Movie Explorer (CMP)</h3>
+            <p class="subtitle">Personal Project — Open Source</p>
+            <p class="summary">A production-ready cross-platform movie discovery app sharing 100% of its UI between Android and iOS using Compose Multiplatform — proof that KMP/CMP can deliver a fully native-feeling experience on both platforms from one codebase.</p>
+            <div class="pill-row"><span class="pill">Kotlin Multiplatform</span><span class="pill">Compose Multiplatform</span><span class="pill">Koin</span><span class="pill">Ktor</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">100% Shared UI — Android + iOS</span><span class="badge-impact">Strict DTO-to-Domain Mapping</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+
+        <article class="showcase-card" data-cat="android" data-modal="vitaltrack">
+          <div class="thumb">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="tg-vitaltrack" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="var(--blue)" stop-opacity=".25"/>
+              <stop offset="100%" stop-color="var(--bg-2)"/>
+            </linearGradient></defs>
+            <rect width="400" height="250" fill="url(#tg-vitaltrack)"/>
+            <rect x="24" y="24" width="150" height="14" rx="4" fill="#ffffff" opacity=".1"/>
+            <rect x="24" y="52" width="352" height="70" rx="10" fill="#ffffff" opacity=".06"/>
+            <rect x="24" y="134" width="168" height="92" rx="10" fill="#ffffff" opacity=".05"/>
+            <rect x="208" y="134" width="168" height="92" rx="10" fill="#ffffff" opacity=".05"/>
+            <text x="200" y="200" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--blue)" text-anchor="middle" opacity=".5">VITALTRACK HEALT</text>
+          </svg>
+            <span class="cat-tag">Android</span>
+          </div>
+          <div class="body">
+            <h3>VitalTrack Health</h3>
+            <p class="subtitle">Mobile Architect</p>
+            <p class="summary">A wearable-synced health app was leaking memory during long tracking sessions. Re-architected around MVI with strict lifecycle-aware data streams.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Compose</span><span class="pill">Room</span><span class="pill">Health Connect</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">500k+ MAU</span><span class="badge-impact">Reduced Memory 45%</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+
+        <article class="showcase-card" data-cat="flutter" data-modal="pos-suite">
+          <div class="thumb">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="tg-pos-suite" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="var(--orange)" stop-opacity=".25"/>
+              <stop offset="100%" stop-color="var(--bg-2)"/>
+            </linearGradient></defs>
+            <rect width="400" height="250" fill="url(#tg-pos-suite)"/>
+            <rect x="24" y="24" width="150" height="14" rx="4" fill="#ffffff" opacity=".1"/>
+            <rect x="24" y="52" width="352" height="70" rx="10" fill="#ffffff" opacity=".06"/>
+            <rect x="24" y="134" width="168" height="92" rx="10" fill="#ffffff" opacity=".05"/>
+            <rect x="208" y="134" width="168" height="92" rx="10" fill="#ffffff" opacity=".05"/>
+            <text x="200" y="200" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--blue)" text-anchor="middle" opacity=".5">RETAIL POS SUITE</text>
+          </svg>
+            <span class="cat-tag">Flutter</span>
+          </div>
+          <div class="body">
+            <h3>Retail POS Suite</h3>
+            <p class="subtitle">Cross-Platform Engineer</p>
+            <p class="summary">A retail chain needed one point-of-sale app across tablets and handheld scanners, each with different hardware peripherals.</p>
+            <div class="pill-row"><span class="pill">Flutter</span><span class="pill">Dart</span><span class="pill">Platform Channels</span><span class="pill">SQLite</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">120+ Store Rollout</span><span class="badge-impact">Offline-First</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+      </div>
+
+      <p id="emptyState" style="display:none; color:var(--text-2); font-family:var(--font-mono); font-size:.9rem; margin-top:1rem;">No projects in this category yet.</p>
+    </div>
+  </section>
+
+  <!-- ============ CLOSING CTA ============ -->
+  <section class="section" id="contact-cta">
+    <div class="wrap">
+      <div class="closing reveal">
+        <h2>Have a hard mobile problem? Let's architect the fix.</h2>
+        <p>Available for senior engineering engagements, technical leadership, and multiplatform migrations.</p>
+        <div class="cta-row">
+          <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+          <a href="services.html" class="btn btn-ghost">See Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">Rana<span class="dot">.</span>Bilal</a>
+        <p>Senior Mobile &amp; Multiplatform Engineer building resilient, high-scale software across Android, iOS, and beyond.</p>
+        <div class="social-row">
+          <a href="https://github.com/ranab4b" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 000 12.1c0 5.16 3.29 9.53 7.86 11.08.58.11.79-.26.79-.57v-2.02c-3.2.72-3.88-1.57-3.88-1.57-.52-1.36-1.28-1.72-1.28-1.72-1.05-.74.08-.72.08-.72 1.16.08 1.77 1.22 1.77 1.22 1.03 1.8 2.7 1.28 3.36.98.1-.76.4-1.28.73-1.58-2.55-.3-5.24-1.32-5.24-5.86 0-1.29.45-2.35 1.19-3.18-.12-.3-.52-1.53.11-3.19 0 0 .98-.32 3.2 1.22a10.9 10.9 0 015.83 0c2.21-1.54 3.19-1.22 3.19-1.22.63 1.66.23 2.89.11 3.19.74.83 1.19 1.89 1.19 3.18 0 4.55-2.7 5.55-5.26 5.85.41.37.78 1.1.78 2.22v3.29c0 .31.21.69.8.57A11.5 11.5 0 0024 12.1 11.5 11.5 0 0012 .5z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rana-bilal-88a166a5/" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.1 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zM8.5 8h3.8v2.05h.05c.53-.99 1.83-2.05 3.77-2.05 4.03 0 4.77 2.62 4.77 6.03V23h-4v-6.9c0-1.64-.03-3.75-2.29-3.75-2.3 0-2.65 1.79-2.65 3.63V23h-4V8z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Work</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Focus Areas</h4>
+        <ul>
+          <li><a href="projects.html">Native Mobile</a></li>
+          <li><a href="projects.html">KMP / CMP</a></li>
+          <li><a href="projects.html">Architecture</a></li>
+          <li><a href="projects.html">Performance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:ranabilalb4b@gmail.com">ranabilalb4b@gmail.com</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Rana Bilal. All rights reserved.</span>
+      <span>Built with Kotlin, Swift &amp; care.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalContent" role="dialog" aria-modal="true"></div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

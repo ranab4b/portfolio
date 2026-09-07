@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 430" width="400" height="430">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161A23"/>
+      <stop offset="100%" stop-color="#0F1115"/>
+    </linearGradient>
+    <linearGradient id="figure" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#232838"/>
+      <stop offset="100%" stop-color="#1A1E29"/>
+    </linearGradient>
+    <linearGradient id="glowline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00D2FF"/>
+      <stop offset="100%" stop-color="#7C5CFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="430" fill="url(#bg)"/>
+  <!-- subtle circuit grid -->
+  <g stroke="#242A38" stroke-width="1" opacity="0.6">
+    <path d="M0 90 H400"/>
+    <path d="M0 340 H400"/>
+    <path d="M120 0 V430"/>
+    <path d="M300 0 V430"/>
+  </g>
+  <!-- shoulders/torso -->
+  <path d="M60 430 C60 320 140 300 200 300 C260 300 340 320 340 430 Z" fill="url(#figure)"/>
+  <!-- neck -->
+  <rect x="178" y="235" width="44" height="55" rx="18" fill="url(#figure)"/>
+  <!-- head -->
+  <ellipse cx="200" cy="185" rx="72" ry="82" fill="url(#figure)"/>
+  <!-- code bracket overlay -->
+  <text x="200" y="205" font-family="JetBrains Mono, monospace" font-size="64" fill="url(#glowline)" text-anchor="middle" opacity="0.85">{ }</text>
+  <!-- scan accent line -->
+  <rect x="0" y="184" width="400" height="2" fill="url(#glowline)" opacity="0.5"/>
+  <!-- corner nodes -->
+  <circle cx="40" cy="40" r="3" fill="#00D2FF"/>
+  <circle cx="360" cy="40" r="3" fill="#FF5E36"/>
+  <circle cx="40" cy="390" r="3" fill="#7C5CFF"/>
+  <circle cx="360" cy="390" r="3" fill="#00D2FF"/>
+</svg>
