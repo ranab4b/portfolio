@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const PROJECT_DATA = {
     "motive-driver": {
       kind: "Compliance & Safety / Fleet Tech", title: "Motive Driver App",
-      summary: "The primary Android client used by hundreds of thousands of commercial drivers across North America to stay compliant with FMCSA and CCMTA electronic-logging regulations. Owned core ELD/HOS workflows and Bluetooth pairing with Motive's in-cab Vehicle Gateway hardware.",
+      summary: "The primary Android client for hundreds of thousands of commercial drivers across North America, keeping them compliant with FMCSA and CCMTA electronic-logging rules. I owned the core ELD/HOS workflows and the Bluetooth pairing layer that talks to Motive's in-cab Vehicle Gateway hardware.",
       architecture: ["MVI with Clean Architecture and Domain-Driven Design across compliance-critical modules", "Bluetooth Low Energy pairing layer bridging the app to Motive's Vehicle Gateway ELD hardware", "Cloud-first ELD event pipeline built with the Cloud ELD team for reliable, low-discrepancy syncing"],
       contributions: ["Owned core ELD/HOS workflows: driving lock screen, HOS log generation, vehicle selection, co-driver flows, and DVIR inspections", "Led Android delivery for Remote Vehicle Search, enabling real-time fleet dispatching", "Delivered multiple Canadian ELD recertification projects, maintaining uninterrupted CCMTA compliance", "Migrated core compliance modules from legacy patterns to MVI/MVVM with DDD and SOLID principles"],
       stack: ["Kotlin", "Jetpack Compose", "MVVM/MVI", "Bluetooth (BLE)", "Room", "Firebase Crashlytics"],
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     "motive-fleet": {
       kind: "Fleet Management / SaaS Dashboard", title: "Motive Fleet App",
-      summary: "The companion Android app for fleet managers and dispatchers \u2014 real-time GPS tracking, vehicle health telematics, and remote ELD compliance monitoring across an entire fleet from a single map view.",
+      summary: "The companion app for fleet managers and dispatchers. From one map view they get real-time GPS tracking, vehicle health telematics, and remote ELD compliance status across the whole fleet.",
       architecture: ["Shared domain/data layer with the Driver app for consistent compliance logic across both clients", "Real-time map rendering layer using Google Maps SDK with live location, satellite, and traffic overlays", "Vehicle Search API integration enabling dispatch-ready vehicle lookup by status, location, and HOS availability"],
       contributions: ["Led Android delivery for Remote Vehicle Search and Vehicle Search API integration", "Built maintenance telematics views surfacing DEF level, fuel level, engine fault codes, and odometer data", "Partnered with backend and Cloud ELD teams to keep fleet-side compliance data in sync with driver-side logs"],
       stack: ["Kotlin", "Jetpack Compose", "Google Maps SDK", "REST APIs", "MVVM"],
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     "airmiles": {
       kind: "Loyalty & Rewards", title: "Airmiles App",
-      summary: "A regional loyalty rewards app built from architecture design through Play Store launch \u2014 letting members track their Air Miles balance, browse partner offers, and redeem rewards on the go.",
+      summary: "A regional loyalty rewards app I built from architecture through Play Store launch. Members track their Air Miles balance, browse partner offers, and redeem rewards on the go.",
       architecture: ["Defined the app's tech stack, coding standards, and third-party integration strategy from a blank slate", "Modular rewards and redemption layer supporting multiple partner integrations"],
       contributions: ["Owned end-to-end architecture design through Play Store launch", "Established coding standards and integration patterns adopted across the team's subsequent apps"],
       stack: ["Kotlin", "MVVM", "REST APIs", "Push Notifications"],
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     "gifti-oman": {
       kind: "E-Commerce / Gifting Platform", title: "Gifti Oman",
-      summary: "Oman's e-commerce gifting app \u2014 letting users buy, personalize, and send digital gift cards from a growing network of retail partners, with tie-in offers for OAB credit card holders.",
+      summary: "Oman's e-commerce gifting app. Users buy, personalize, and send digital gift cards from a growing network of retail partners, with extra tie-in offers for OAB credit card holders.",
       architecture: ["Partner-catalog and offer-redemption layer supporting a growing list of retail merchants", "Bank-tier promotional integration surfacing exclusive OAB cardholder deals"],
       contributions: ["Delivered the app as part of the Mylist/Merit Incentives engineering team, covering client requirement gathering and release management", "Coordinated with distributed cross-functional teams to ship on schedule"],
       stack: ["Kotlin", "MVVM", "Payment Integration", "REST APIs"],
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     "offaraty": {
       kind: "Employee Benefits / Fintech Client", title: "Offaraty by Riyad Bank",
-      summary: "An exclusive offers and benefits app built for Riyad Bank's employees \u2014 browse and redeem discounts across shopping, dining, and lifestyle categories using an employee-code login.",
+      summary: "An offers and benefits app built for Riyad Bank employees. They log in with an employee code and redeem discounts across shopping, dining, and lifestyle categories.",
       architecture: ["Employee-code authentication flow tailored to Riyad Bank's internal directory", "Category-based offer browsing and redemption engine shared across Merit Incentives' client portfolio"],
       contributions: ["Delivered as part of the Mylist/Merit Incentives engineering team serving a retail banking client", "Supported client requirement gathering and release coordination"],
       stack: ["Kotlin", "MVVM", "REST APIs"],
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     "crypto-tracker": {
       kind: "Personal / Open Source", title: "Crypto Tracker",
-      summary: "A full-featured crypto market tracker built to demonstrate modern Android architecture end to end \u2014 Compose UI, MVI, and a custom-drawn line chart, all wired together with Koin and Ktor.",
+      summary: "A crypto market tracker built to show modern Android architecture end to end. Compose UI, MVI, and a hand-drawn line chart, all wired together with Koin and Ktor.",
       architecture: ["Clean Architecture with MVI state management", "Koin-based dependency injection across all layers", "Adaptive navigation with Material 3 dynamic theming"],
       contributions: ["Built a custom Canvas-drawn line chart for historical price data, avoiding third-party charting dependencies", "Integrated a free crypto market data API via Ktor for live coin pricing and history"],
       stack: ["Kotlin", "Jetpack Compose", "Ktor", "Koin", "MVI", "Material 3"],
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     "flutter-movie-explorer": {
       kind: "Personal / Open Source", title: "Flutter Movie Explorer",
-      summary: "A production-grade Flutter movie discovery app built strictly to Clean Architecture and BLoC, with debounced live search, infinite scroll, and a full BLoC/UseCase unit test suite.",
+      summary: "A Flutter movie discovery app built strictly to Clean Architecture and BLoC. It has debounced live search, infinite scroll, and a full BLoC/UseCase unit test suite.",
       architecture: ["Strict separation of Data, Domain, and Presentation layers", "BLoC pattern for predictable, testable state management"],
       contributions: ["Implemented debounced real-time search against the TMDB API with dynamic genre-ID mapping", "Built a custom branded loading/initialization state", "Wrote a full BLoC and UseCase unit test suite using mocktail"],
       stack: ["Flutter", "Dart", "BLoC", "Clean Architecture", "mocktail"],
@@ -59,19 +59,19 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     "cmp-movie-explorer": {
       kind: "Personal / Open Source", title: "The Movie Explorer (CMP)",
-      summary: "A production-ready cross-platform movie discovery app sharing 100% of its UI between Android and iOS using Compose Multiplatform \u2014 proof that KMP/CMP can deliver a fully native-feeling experience on both platforms from one codebase.",
+      summary: "A cross-platform movie discovery app that shares 100% of its UI between Android and iOS through Compose Multiplatform. It's a working proof that KMP/CMP can feel fully native on both platforms from a single codebase.",
       architecture: ["Clean Architecture and SOLID principles across a fully shared Compose Multiplatform UI layer", "Explicit DTO-to-Domain mapping keeping network models isolated from UI/domain entities"],
       contributions: ["Delivered infinite-scroll pagination and debounced (500ms) live search against the TMDB API", "Built dynamic client-side genre-ID-to-label mapping", "Wired the full app together with Koin for dependency injection"],
       stack: ["Kotlin Multiplatform", "Compose Multiplatform", "Koin", "Ktor"],
       links: { web: "https://github.com/ranab4b/compose-multiplatform-tmdb-app" }
     },
-    "vitaltrack": {
-      kind: "Health / Wearables", title: "VitalTrack Health",
-      summary: "A wearable-synced health app was leaking memory during long tracking sessions. Re-architected around MVI with strict lifecycle-aware data streams.",
-      architecture: ["MVI with lifecycle-aware data streams", "Repository layer isolating Health Connect from UI state", "Structured concurrency for sensor session management"],
-      contributions: ["Re-architected session handling around MVI with strict lifecycle-aware data streams", "Diagnosed and closed three long-running memory leaks in the sensor pipeline", "Cut peak memory usage by 45% during multi-hour tracking sessions"],
-      stack: ["Kotlin", "Compose", "Room", "Health Connect"],
-      links: {  }
+    "android-modularization-blueprint": {
+      kind: "Personal / Open Source", title: "Android Modularization Blueprint",
+      summary: "A demo Android codebase split into feature and core Gradle modules to answer a concrete question: does modularizing actually speed up incremental builds, or is it just organizational tidiness? Touching one file in a feature module and rebuilding came out about 30% faster than the same change in a single-module baseline.",
+      architecture: ["app/ stays thin: it only wires the NavHost and lets Hilt assemble the dependency graph, sitting on top of core-ui, core-network, core-database, and core-common", "feature-home, feature-detail, and feature-settings each depend on core-common and core-ui, never on each other or on app, so a change in one feature can't force a rebuild of another", "Compose, coroutines, Retrofit/OkHttp, and Room are exposed as api only from the modules whose public functions actually return those types; everywhere else they stay implementation so changes don't cascade through the whole compile graph", "Repositories are bound once in core-common's CommonModule via @Binds and installed into Hilt's SingletonComponent, so feature-home/detail and feature-settings share the same singleton and a theme toggle in Settings shows up immediately in the app-level MaterialTheme"],
+      contributions: ["Modeled the api vs. implementation boundary explicitly. Defaulting everything to api is what quietly turns a modularized app back into a monolith at the build-graph level, since every consumer's compile classpath grows to include everything transitively", "Wired core-network and core-database with their own Hilt modules that no real screen touches yet, so the repo shows exactly where a production data source would slot into the graph without touching feature or core-common code", "Benchmarked the claim instead of just asserting it: touching one file in feature-home and running ./gradlew assembleDebug took 3.744s on the monolith-baseline branch versus 2.614s on the modularized main branch, about 30% faster", "Wrote down the exact reproduction steps (checkout, touch a file, time the build) so the numbers are checkable, not just claimed"],
+      stack: ["Kotlin", "Jetpack Compose", "Hilt", "Compose Navigation", "Gradle Version Catalogs"],
+      links: { web: "https://github.com/ranab4b/android-modularization-blueprint" }
     },
     "pos-suite": {
       kind: "Retail / Cross-Platform", title: "Retail POS Suite",
