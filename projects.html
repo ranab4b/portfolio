@@ -55,9 +55,9 @@
     <div class="wrap">
 
       <div class="filter-bar reveal" role="tablist" aria-label="Project category filter">
-        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects <span class="count">(10)</span></button>
-        <button class="filter-btn" data-filter="android" role="tab" aria-selected="false">Native Android <span class="count">(7)</span></button>
-        <button class="filter-btn" data-filter="flutter" role="tab" aria-selected="false">Flutter <span class="count">(2)</span></button>
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects <span class="count">(11)</span></button>
+        <button class="filter-btn" data-filter="android" role="tab" aria-selected="false">Native Android <span class="count">(9)</span></button>
+        <button class="filter-btn" data-filter="flutter" role="tab" aria-selected="false">Flutter <span class="count">(1)</span></button>
         <button class="filter-btn" data-filter="cmp" role="tab" aria-selected="false">KMP / CMP <span class="count">(1)</span></button>
       </div>
 
@@ -209,28 +209,44 @@
           </div>
         </article>
 
-        <article class="showcase-card" data-cat="flutter" data-modal="pos-suite">
+        <article class="showcase-card" data-cat="android" data-modal="compose-microinteractions">
+          <div class="thumb">
+            <img src="assets/img/compose-microinteractions.jpg" alt="Compose Micro-interactions thumbnail">
+            <span class="cat-tag">Android</span>
+          </div>
+          <div class="body">
+            <h3>Compose Micro-interactions</h3>
+            <p class="subtitle">Personal Project — Open Source</p>
+            <p class="summary">A small gallery of physics-based Compose animations: shared-element transitions, swipe-to-reveal, spring buttons, and parallax scroll.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">SharedTransitionLayout</span><span class="pill">Animatable</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">4 Physics-Based Demos</span><span class="badge-impact">SharedTransitionLayout Showcase</span></div>
+            <span class="card-link">View Full Case Study</span>
+          </div>
+        </article>
+
+        <article class="showcase-card" data-cat="android" data-modal="android-architecture-guardrails">
           <div class="thumb">
             <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="tg-pos-suite" x1="0" y1="0" x2="1" y2="1">
+            <defs><linearGradient id="tg-guardrails" x1="0" y1="0" x2="1" y2="1">
               <stop offset="0%" stop-color="var(--orange)" stop-opacity=".25"/>
               <stop offset="100%" stop-color="var(--bg-2)"/>
             </linearGradient></defs>
-            <rect width="400" height="250" fill="url(#tg-pos-suite)"/>
+            <rect width="400" height="250" fill="url(#tg-guardrails)"/>
             <rect x="24" y="24" width="150" height="14" rx="4" fill="#ffffff" opacity=".1"/>
-            <rect x="24" y="52" width="352" height="70" rx="10" fill="#ffffff" opacity=".06"/>
+            <rect x="24" y="52" width="168" height="70" rx="10" fill="#ffffff" opacity=".06"/>
+            <rect x="208" y="52" width="168" height="70" rx="10" fill="#ffffff" opacity=".06"/>
             <rect x="24" y="134" width="168" height="92" rx="10" fill="#ffffff" opacity=".05"/>
             <rect x="208" y="134" width="168" height="92" rx="10" fill="#ffffff" opacity=".05"/>
-            <text x="200" y="200" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--blue)" text-anchor="middle" opacity=".5">RETAIL POS SUITE</text>
+            <text x="200" y="200" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--orange)" text-anchor="middle" opacity=".5">ARCHITECTURE GUARDRAILS</text>
           </svg>
-            <span class="cat-tag">Flutter</span>
+            <span class="cat-tag">Android</span>
           </div>
           <div class="body">
-            <h3>Retail POS Suite</h3>
-            <p class="subtitle">Cross-Platform Engineer</p>
-            <p class="summary">A retail chain needed one point-of-sale app across tablets and handheld scanners, each with different hardware peripherals.</p>
-            <div class="pill-row"><span class="pill">Flutter</span><span class="pill">Dart</span><span class="pill">Platform Channels</span><span class="pill">SQLite</span></div>
-            <div class="badge-impact-row"><span class="badge-impact">120+ Store Rollout</span><span class="badge-impact">Offline-First</span></div>
+            <h3>Android Architecture Guardrails</h3>
+            <p class="subtitle">Personal Project — Open Source</p>
+            <p class="summary">A two-tier CI setup for Android architecture reviews: deterministic Konsist tests that block a merge on a Clean Architecture layer violation, and an LLM-based SOLID smell reviewer that only ever leaves a comment.</p>
+            <div class="pill-row"><span class="pill">Kotlin</span><span class="pill">Konsist</span><span class="pill">GitHub Actions</span><span class="pill">TypeScript</span></div>
+            <div class="badge-impact-row"><span class="badge-impact">Deterministic Merge Gate</span><span class="badge-impact">Advisory-Only LLM Review</span></div>
             <span class="card-link">View Full Case Study</span>
           </div>
         </article>

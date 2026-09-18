@@ -73,13 +73,21 @@ document.addEventListener('DOMContentLoaded', () => {
       stack: ["Kotlin", "Jetpack Compose", "Hilt", "Compose Navigation", "Gradle Version Catalogs"],
       links: { web: "https://github.com/ranab4b/android-modularization-blueprint" }
     },
-    "pos-suite": {
-      kind: "Retail / Cross-Platform", title: "Retail POS Suite",
-      summary: "A retail chain needed one point-of-sale app across tablets and handheld scanners, each with different hardware peripherals.",
-      architecture: ["BLoC pattern for predictable state across screens", "Platform channel bridges isolating hardware-specific code", "Local-first SQLite store with background sync"],
-      contributions: ["Built a single Flutter codebase with pluggable hardware bridges for scanners and printers", "Rolled out to 120+ stores with zero platform-specific forks", "Designed offline-first checkout so registers keep working through outages"],
-      stack: ["Flutter", "Dart", "Platform Channels", "SQLite"],
-      links: {  }
+    "compose-microinteractions": {
+      kind: "Personal / Open Source", title: "Compose Micro-interactions",
+      summary: "A small gallery of physics-based Compose animations: shared-element transitions, swipe-to-reveal, spring buttons, and parallax scroll.",
+      architecture: ["SharedTransitionLayout-based shared-element transitions with spring-based bounds transforms", "Animatable and draggable-driven gesture handling for swipe interactions that settle with a spring", "graphicsLayer-based parallax scroll offsetting a header at a different rate than the list beneath it"],
+      contributions: ["Shared Element — a record in a list expands into a full detail view using SharedTransitionLayout and spring-based bounds transforms", "Swipe to Reveal — drag a message to reveal archive/delete actions, driven by Animatable and draggable, settling with a spring", "Spring Button — a press-and-release button with bouncy scale animation and haptic feedback", "Parallax Scroll — a header that moves at a different rate than the list scrolling beneath it, via graphicsLayer"],
+      stack: ["Kotlin", "Jetpack Compose", "SharedTransitionLayout", "Animatable"],
+      links: { web: "https://github.com/ranab4b/compose-microinteractions-showcase" }
+    },
+    "android-architecture-guardrails": {
+      kind: "Personal / Open Source", title: "Android Architecture Guardrails",
+      summary: "Architecture reviews on most Android teams are verbal, inconsistent, and depend on who's reviewing the PR that day. This repo splits the review into two tiers with very different guarantees: a deterministic Konsist check that can block a merge, and an LLM-based SOLID smell check that never can.",
+      architecture: ["Konsist tests as plain JUnit assertions over parsed Kotlin source, enforcing Clean Architecture layer boundaries (domain/data/presentation dependency direction, UseCase/Repository/ViewModel package placement)", "LLM-based SOLID smell reviewer scoped to pull-requests: write only, with continue-on-error: true and no core.setFailed() path — structurally unable to block a PR", "Plain Kotlin/JVM sample-app module, no Android Gradle Plugin, so CI only needs a JDK"],
+      contributions: ["Wrote five Konsist checks covering layer dependency direction and UseCase/Repository/RepositoryImpl/ViewModel package conventions, all passing on main", "Proved the hard-fail tier with a demo-violation branch and a real CI run where the Konsist check fails on a genuine layer-boundary breach", "Designed the advisory reviewer to no-op safely and exit successfully when ANTHROPIC_API_KEY isn't configured, instead of failing the build"],
+      stack: ["Kotlin", "Konsist", "JUnit 5", "GitHub Actions", "TypeScript"],
+      links: { web: "https://github.com/ranab4b/android-architecture-guardrails" }
     },
   };
   /* ---------- Footer year ---------- */
